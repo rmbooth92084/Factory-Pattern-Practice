@@ -1,0 +1,8 @@
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+FactoryPattern.layout
+FactoryPattern.dev
+
+test
