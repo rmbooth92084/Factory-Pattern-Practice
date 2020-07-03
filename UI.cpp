@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include "headers.h"
 #include <vector>
+
 using namespace std;
 //global variable
 vector<int> list;
@@ -19,7 +20,8 @@ void selectSort()
 	cout << "c) Quick sort " << endl;
 	
 	vector<int> sortedList;
-	int userInput, validInput;
+	char userInput = 'a';
+	int validInput;
 	cin >> userInput;
 	while(1)
 	{
@@ -61,18 +63,14 @@ void selectSort()
 void getUserListInput()
 {
 	cout << "Please enter a list of integers to be sorted from least to greatest." << endl;
-	cout << "Input q at the end to finish." << endl;
+	cout << "Must ipnut 5 numbers." << endl;
 	
 	int input;
-	while(1)
+	for(int i = 0; i < 5; i++)
 	{
-		input = 'q';//default input	
 		cin >> input;
-		if(input == 'q')
-			break;
 		list.push_back(input);
 	}
-	list.pop_back(); //removes the extra 0 at the end
 }
 
 int main(int argc,char** argv) 
