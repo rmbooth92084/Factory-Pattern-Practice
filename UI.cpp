@@ -63,12 +63,13 @@ void selectSort()
 void getUserListInput()
 {
 	cout << "Please enter a list of integers to be sorted from least to greatest." << endl;
-	cout << "Must ipnut 5 numbers." << endl;
-	
-	int input;
+	cout << "Must input 5 integers." << endl;
+	char input;
 	for(int i = 0; i < 5; i++)
 	{
+		
 		cin >> input;
+		if(input == 'q')
 		list.push_back(input);
 	}
 }
@@ -77,9 +78,10 @@ int main(int argc,char** argv)
 {
 	getUserListInput();
 	selectSort();
+	cout << "Sorted List: " << endl;
 	for(int i = 0; i < list.size(); i++)
 	{
-		cout << list.at(i);
+		cout << list.at(i) << "," ;
 	}
 	cout << endl;
 	return 0;
