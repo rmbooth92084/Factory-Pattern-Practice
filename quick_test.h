@@ -8,42 +8,42 @@ TEST(QuickSort, SortingBasicList)
 	std::vector<int> test = {9,8,7,6,5,4,3,2,1,0};
 	int sorted[] = {0,1,2,3,4,5,6,7,8,9};
 	
-	for(int i = 0; i < test.size() - 1;i++)
+	for(int i = 0; i < test.size();i++)
 	{
-		EXPECT_EQ(QubbleSort(test).at(i),sorted[i]);
+		EXPECT_EQ(QuickSort(test).at(i),sorted[i]);
 	}
 	
 }
 
-TEST(QubbleSort, AlreadySortedList)
+TEST(QuickleSort, AlreadySortedList)
 {
 	std::vector<int> test = {1,2,3,4,5};
 	int sorted[] = {1,2,3,4,5};
 	
-	for(int i = 0; i < test.size() - 1;i++)
+	for(int i = 0; i < test.size();i++)
 	{
-		EXPECT_EQ(QubbleSort(test).at(i),sorted[i]);
+		EXPECT_EQ(QuickSort(test).at(i),sorted[i]);
 	}
 	
 }
 
-TEST(QubbleSort, OneNumberLongList)
+TEST(QuickSort, OneNumberLongList)
 {
 	std::vector<int> test = {0};
 	int sorted[] = {0};
 	
-	for(int i = 0; i < test.size() - 1;i++)
+	for(int i = 0; i < test.size();i++)
 	{
-		EXPECT_EQ(QubbleSort(test).at(i),sorted[i]);
+		EXPECT_EQ(QuickSort(test).at(i),sorted[i]);
 	}
 	
 }
 
-TEST(QubbleSort, EmptyList)
+TEST(QuickeSort, EmptyList)
 {
 	std::vector<int> test = {};
 	
-	EXPECT_EQ(QubbleSort(test),test);
+	EXPECT_EQ(QuickSort(test),test);
 
 	
 }
