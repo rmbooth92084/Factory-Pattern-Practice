@@ -37,10 +37,10 @@ void selectSort()
 			case 'B':
 				list = SelectionSort(list);
 				break;
-		/*	case 'C':
+			case 'c':
 			case 'C':
 				list = QuickSort(list);
-				break;*/
+				break;
 			default:
 				validInput = 0;
 				cout << "invalid input, please try again" << endl;
@@ -75,7 +75,7 @@ int main(int argc,char** argv)
 	cout << "Sorted List: " << endl;
 	for(int i = 0; i < list.size(); i++)
 	{
-		cout << list.at(i) ;
+		cout << list.at(i) << " " ;
 	}
 	cout << endl;
 	return 0;
