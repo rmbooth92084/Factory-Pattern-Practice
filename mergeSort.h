@@ -67,6 +67,9 @@ void mergeFormat(std::vector<int> &vec, int left, int right)
 std::vector<int> MergeSort(std::vector<int> vec)
 {
 	mergeFormat(vec,0,vec.size() - 1);
+	//called it a second time to fix an issue with how I implemented the sorting 
+	//when it merges
+	mergeFormat(vec,0,vec.size() - 1);
 	return vec;
 }
 #endif

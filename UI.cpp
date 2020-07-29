@@ -18,6 +18,7 @@ void selectSort()
 	cout << "a) Bubble sort " << endl;
 	cout << "b) Selection sort " << endl;
 	cout << "c) Quick sort " << endl;
+	cout << "d) Merge sort " << endl;
 	
 	char userInput;
 	int validInput;
@@ -40,6 +41,10 @@ void selectSort()
 			case 'c':
 			case 'C':
 				list = QuickSort(list);
+				break;
+			case 'd':
+			case 'D':
+				list = MergeSort(list);
 				break;
 			default:
 				validInput = 0;

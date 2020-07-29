@@ -17,12 +17,17 @@ TEST(MergeSort, SortingBasicList)
 }
 TEST(MergeSort, SortingBasicListWithNegatives)
 {
-	std::vector<int> test = {9,-8,7,6,-5,4,-3,2,-1,0};
+	std::vector<int> vec = {9,-8,7,6,-5,4,-3,2,-1,0};
 	int sorted[] = {-8,-5,-3,-1,0,2,4,6,7,9};
 	
+	std::vector<int> test = MergeSort(vec);
 	for(int i = 0; i < test.size();i++)
 	{
-		EXPECT_EQ(MergeSort(test).at(i),sorted[i]);
+		std::cout<< test.at(i) << std::endl;
+	}
+	for(int i = 0; i < test.size();i++)
+	{
+		EXPECT_EQ(test.at(i),sorted[i]);
 	}
 	
 }
